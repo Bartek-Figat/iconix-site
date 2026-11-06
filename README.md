@@ -1,67 +1,47 @@
-# Iconix website
+<div align="center">
 
-Next.js site that shows every icon from `@iconix/icons`, with search, category filter,
-a light theme by default (dark theme toggle in the header) and a popup for each icon:
+# Iconix
 
-- **Customize**: color, size, stroke width, shape (none / circle / square), background, rotate, flip
-- **Where can I use it?**: tabs for React, Next.js, Vue / Nuxt, HTML, JavaScript, CSS, SVG, CLI with a ready example for that icon
-- **Animation**: pick spin, pulse, draw, bounce, heartbeat, shake, ring, float or blink, press **Start** and copy the code
-- Download SVG, copy SVG, copy component name; ← / → switch icons, Esc closes; links like `/#icon=valve` open an icon directly
+**1,728 free SVG icons for React, Vue and the web**
 
-## Run it
+### [Open the website →](https://bartek-figat.github.io/iconix-site/)
 
-```bash
-npm install        # Windows PowerShell: npm.cmd install
-npm run dev        # http://localhost:3000
-```
+[Website](https://bartek-figat.github.io/iconix-site/) · [npm](https://www.npmjs.com/package/@iconix/icons) · [Buy me a coffee](https://buymeacoffee.com/bartek1983d)
 
-The site uses `@iconix/icons@^1.1.0`. If 1.1.0 is not on npm yet, install the bundled package first:
+</div>
 
-```bash
-npm install ./iconix-icons-1.1.0.tgz
-```
+![Iconix website](docs/hero.png)
 
-## Publish on GitHub Pages
+## What you can do on the website
 
-The project is ready for GitHub Pages: `next.config.ts` exports a static site to `out/`
-and `.github/workflows/deploy.yml` builds and deploys it on every push to `main`.
+- **Browse every icon.** All 1,728 icons in 46 categories, from everyday UI and web to industrial automation, electrical and electronics. Search by name or pick a category.
+- **Customize before you copy.** Change the color, size, stroke width, shape (plain, circle or square), background, rotation and mirroring, and see the result live at every size.
+- **Copy ready code.** Every icon has examples for React, Next.js, Vue / Nuxt, HTML, JavaScript, CSS, SVG and the CLI, updated with your settings.
+- **Try animations.** Pick spin, pulse, draw, bounce, heartbeat, shake, ring, float or blink, press **Start** and copy the CSS.
+- **Light and dark theme.** Light by default, one click to switch.
 
-1. Publish `@iconix/icons@1.1.0` to npm first (the build installs it from npm),
-   or keep `iconix-icons-1.1.0.tgz` in the repository.
-2. Create a new repository on GitHub, for example `iconix-site`.
-3. Push this folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "Iconix website"
-   git branch -M main
-   git remote add origin https://github.com/YOUR-USERNAME/iconix-site.git
-   git push -u origin main
-   ```
-4. On GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-5. Open the **Actions** tab and wait for "Deploy to GitHub Pages" to finish (about 2 minutes).
-   The site is live at `https://YOUR-USERNAME.github.io/iconix-site/`.
+![Icon gallery](docs/gallery.png)
 
-The workflow sets the base path (`/iconix-site`) automatically from the repository name.
-To use your own domain, add it in Settings → Pages → Custom domain.
+![Icon popup with customizer and code](docs/popup.png)
 
-## Production (own server)
+## Use the icons in your project
 
 ```bash
-npm run build   # static files in ./out
+npm install @iconix/icons
 ```
 
-The page is fully static, so `out/` can be hosted anywhere: GitHub Pages, Netlify, Cloudflare Pages, Vercel or any web server.
+```tsx
+import { IconBell } from '@iconix/icons/react';
 
-## Files
+<IconBell size={32} color="#2563eb" variant="circle" background="#eff6ff" />
+```
 
-```
-app/layout.tsx                 theme script (light by default, remembers the choice)
-app/page.tsx                   hero, gallery, usage, compatibility, options
-app/components/IconGallery.tsx search, filters, grid
-app/components/IconDialog.tsx  popup: preview, customizer, usage tabs
-app/components/AnimationDemo.tsx animation picker with Start/Stop and code
-app/lib/snippets.ts            code examples generated from the current options
-app/lib/animations.ts          animation CSS
-app/globals.css                design tokens for light and dark themes
-```
+Full documentation is on [npm](https://www.npmjs.com/package/@iconix/icons).
+
+## Support
+
+Iconix is free and MIT licensed. If it saves you time, you can [buy me a coffee](https://buymeacoffee.com/bartek1983d). ☕
+
+## License
+
+MIT © Bartek Figatowski
