@@ -173,7 +173,7 @@ export default function Home() {
         <section className="hero">
           <div className="hero-dots" aria-hidden />
           <div className="wrap hero-inner">
-            <p className="crumbs mono">@iconix/icons · v1.1.0 · MIT</p>
+            <p className="crumbs mono">@iconix/icons · v1.2.0 · MIT</p>
             <h1>{count} icons for React, Vue&nbsp;&amp;&nbsp;the&nbsp;web.</h1>
             <p className="lead">
               Clean, consistent line icons in {categories.length} categories, from everyday UI to industrial automation,

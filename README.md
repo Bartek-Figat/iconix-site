@@ -7,7 +7,7 @@
   </picture>
 </a>
 
-<h3>1,728 free SVG icons for React, Vue and the web</h3>
+<h3>1,958 free SVG icons for React, Vue and the web</h3>
 
 <p>
   <a href="https://bartek-figat.github.io/iconix-site/"><img src="https://img.shields.io/badge/Website-Browse%20all%20icons-18181b?style=for-the-badge" alt="Website: browse all icons"></a>
@@ -23,7 +23,7 @@
 
 ## What you can do on the website
 
-- **Browse every icon.** 1,728 icons in 46 categories, from everyday UI and web to industrial automation, electrical and electronics. Search by name or pick a category.
+- **Browse every icon.** 1,958 icons in 46 categories, from everyday UI and web to industrial automation, electrical and electronics. Search by name or pick a category.
 - **Customize before you copy.** Change the color, size, stroke width, shape (plain, circle or square), background, rotation and mirroring, and see the result live at every size.
 - **Copy ready code.** Every icon has examples for React, Next.js, Vue / Nuxt, HTML, JavaScript, CSS, SVG and the CLI, updated with your settings.
 - **Try animations.** Pick spin, pulse, draw, bounce, heartbeat, shake, ring, float or blink, press **Start** and copy the CSS.

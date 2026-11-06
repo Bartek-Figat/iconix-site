@@ -8,7 +8,7 @@
     "start": "npx serve out"
   },
   "dependencies": {
-    "@iconix/icons": "file:./iconix-icons-1.1.0.tgz",
+    "@iconix/icons": "file:./iconix-icons-1.2.0.tgz",
     "next": "16.4.5",
     "react": "19.3.0",
     "react-dom": "19.3.0"
